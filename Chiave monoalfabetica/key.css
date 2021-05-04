@@ -1,0 +1,19 @@
+input[type=text] {
+    width: 220px;
+    height: 100px;
+    margin: 2px 2px 2px 2px;
+    background-color: lightgray;
+}
+
+input[type=text]:hover {
+    background-color: white;
+}
+
+label{
+    color: aqua;
+    font-size: 21px;
+}
+
+p {
+    color: aqua;
+}

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Chiave monoalfabetica</title>
+
+	<!-- quale browser uso? Chrome-->
+	<!-- quale sistema operativo usato? Windows 10-->
+	<!-- data creazipone: 27.04.2021 ; data ultima modifica: 27.04.2021-->
+
+	<meta charset="UTF-8">
+  	<meta name="description" content="Free Web tutorials">
+  	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  	<meta name="author" content="Andrea Curti i1c">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="key.css">
+
+	<link rel="shortcut icon" href="http://www.samtinfo.ch/i19curand/i1ccurand_fav.png" type="image/x-icon">
+	<link rel="icon" href="http://www.samtinfo.ch/i19curand/i1ccurand_fav.png" type="image/x-icon">
+
+</head>
+
+<body style="background-color: 	#484848">
+    <label>Testo da codificare:</label><br>
+    <input type="text" id="tDaCod" style="width: 270px;" onchange="codWithKey()"><br><br><br>
+    
+    
+    <label>Chiave (36 caratteri univoci):</label><br>
+    <input type="text" id="key" style="width: 270px" onchange="codWithKey()"><br><br>
+    
+    <input type="submit" id="genRandom" value="Genera key random" style="margin-left: 70px" onclick="randomKey()">
+    
+    <br><br><br><br>
+    
+    <label>Risultato</label><br>
+    <input type="text" id="finale" style="width: 270px" readonly>
+
+    
+    <p id="errore" style="color: red; font-size: 25px"></p>
+    
+    <label>©Andrea Curti</label>
+    
+    <script src="script.js">
+    </script>
+</body>
+</html>
